@@ -1,0 +1,32 @@
+Java Game / Skybound third-party components
+
+The original game is from teggr/teavm-showcase, revision
+13908cd8d7fbd0d572d23ca9d7c1c865445e974f, reused at its owner's request.
+No license is asserted for that game; see README.md for provenance.
+
+The distribution includes:
+
+- TeaVM-generated JavaScript runtime: https://github.com/konsoletyper/teavm
+  Apache License 2.0.
+- jr native launcher: https://github.com/jarrunner/jr
+  Apache License 2.0.
+- jcefmaven: https://github.com/jcefmaven/jcefmaven
+  Apache License 2.0.
+- Apache Commons Codec, Compress, IO, and Lang: https://commons.apache.org/
+  Apache License 2.0; original attribution notices are retained in the JAR's
+  META-INF/NOTICE.
+- Gson and Error Prone annotations: https://github.com/google/gson and
+  https://github.com/google/error-prone
+  Apache License 2.0.
+- JCEF API: https://github.com/chromiumembedded/java-cef
+  BSD-style license; the original copyright/license text is retained in the
+  JAR's LICENSE.txt.
+
+The Apache License 2.0 is supplied in Apache-2.0.txt in native distribution
+ZIPs, and in licenses/Apache-2.0.txt inside the application JAR.
+
+Platform-specific Chromium/JCEF natives and (when needed) Java are downloaded
+separately on first launch, not shipped in these ZIPs. Their own license and
+third-party notice files must be retained if those bundles are redistributed.
+
+These third-party terms do not license the application or the original game.
