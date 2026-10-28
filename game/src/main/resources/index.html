@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A tiny Java platform game compiled to browser JavaScript with TeaVM.">
+    <title>Skybound | TeaVM Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="classes.js" defer></script>
+    <script src="bootstrap.js" defer></script>
+</head>
+<body>
+<main class="game-page">
+    <header class="page-heading">
+        <p class="eyebrow">A tiny platform game, powered by Java</p>
+        <h1>Skybound <span>★</span></h1>
+        <p class="subtitle">Hop across the blocks and gather every star. The whole game runs in Java, compiled with TeaVM.</p>
+    </header>
+    <section class="game-card" aria-label="Skybound platform game">
+        <div class="game-toolbar">
+            <p class="objective">Find all five stars</p>
+            <p id="score" class="score" aria-live="polite">0 / 5 stars</p>
+            <button id="restart" class="restart" type="button">Play again <span aria-hidden="true">↻</span></button>
+        </div>
+        <div class="canvas-frame">
+            <canvas id="game-canvas" width="960" height="540"
+                    aria-label="Platform game. Use left and right arrows to move and up arrow or space to jump."></canvas>
+        </div>
+        <div class="game-footer">
+            <p class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> move <kbd>Space</kbd> jump</p>
+            <div class="touch-controls" aria-label="Touch controls">
+                <button id="move-left" type="button" aria-label="Move left">←</button>
+                <button id="move-right" type="button" aria-label="Move right">→</button>
+                <button id="jump" type="button" aria-label="Jump">Jump ↑</button>
+            </div>
+        </div>
+    </section>
+    <footer class="tech-note">Single screen. No sprites or game engine. Just Java, TeaVM and Canvas.</footer>
+</main>
+</body>
+</html>
